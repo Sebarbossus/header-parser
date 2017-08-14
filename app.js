@@ -21,8 +21,6 @@ app.get(api, function(req, res, next){
     res.json({'ipaddress': ipaddress, 'language': language[0], 'Operating System': software.os, 'Version': software.version, 'Platform': software.platform, 'Browser': software.browser});
 });
 
-
-
 //Set up the port to listen on
 app.listen(3000, function(){
     console.log("Working");
